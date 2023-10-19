@@ -1,0 +1,12 @@
+<h1>Hola DBZ Main Page</h1>
+
+<div class="row">
+    <div class="col">
+
+        <dbz-list [characterSonList]="charactersAccess" (onDeleteEmiter)="onDeleteCharacterAccess($event)"></dbz-list>
+    </div>
+    <div class="col">
+
+        <dbz-add-character (onNewCharacterEmiter)="onNewCharacterAccess($event)"></dbz-add-character>
+    </div>
+</div>
